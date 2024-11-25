@@ -2,11 +2,12 @@
   {
     "no": 1
     "question": "test1"
-    "answer": {
-      "ans1": "a1",
-      "ans2": "a2",
-      "ans3": "a3",
-      "ans4": "a4"
-    }
+    "choice": [
+      "a1",
+      "a2",
+      "a3",
+      "a4"
+    ]
+    "answer": 1
   },
 ]
