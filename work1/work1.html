@@ -28,6 +28,7 @@
 </div>
 
 <script>
+  console.log("asdasd");
 
   $(function(){
     $("#quizBox").hide();
@@ -61,7 +62,7 @@ function displayQuiz(i,q){
   var quizlist = [];
   $.getJSON("quiz.json",(data)=>quizlist=data);
 
-  console.log(quizlist)
+  console.log(quizlist);
 
 </script>
 </body>
