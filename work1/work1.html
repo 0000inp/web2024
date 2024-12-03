@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>work 1: แบบทดสอบ ม.1</title>
+  <title>work 1: แบบทดสอบ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
 <body>
 
 <div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>แบบทดสอบ เข้าม.1</h1>
+  <h1>แบบทดสอบ</h1>
   
 </div>
   
@@ -27,12 +27,15 @@
   </div>
 </div>
 
+<div id="resultBox" class="mt-4 p-3 bg-light text-center" style="display: none;"></div>
+  <h3 id="resultText"></h3>
+</div>
+
 <script>
   console.log("asdasd");
 
-  var quizlist = [
-  "asdasd": "asdasdasd"
-];
+  var quizlist = [];
+  $.getJSON("quiz.json",(data)=>quizlist=data);
 
   $(function(){
     $("#quizBox").hide();
@@ -40,6 +43,11 @@
        $("#startBox").hide();
        $("#quizBox").show();
        displayQuizList();
+    });
+    $("#btnCheckAnswer").click(function () {
+      const score = calculateScore();
+      $("#resultText").text("คะแนนที่ได้คือ: " + score + " / " + quizlist.length);
+      $("#resultBox").show();
     });
   });
 
@@ -49,23 +57,32 @@
       displayQuiz(i,quizlist[i]);
     }
   }
-function displayQuiz(i,q){
-    var no=parseInt(i)+1;
-    var html = "<div class='p-2'>ข้อที่ "+no+".<div>"+q.title+"</div>";
-    for(var c in q.options){
-      var v=parseInt(c)+1;
-      html+="<div class='alert alert-info'>";
-      html+="<input type='radio' name='q"+no+"' value='"+v+"'>"+v+". ";  
-      html+=q.options[c]+"</div>";  
+  function displayQuiz(i,q){
+      var no=parseInt(i)+1;
+      var html = "<div class='p-2'>ข้อที่ "+no+".<div>"+q.title+"</div>";
+      for(var c in q.options){
+        var v=parseInt(c)+1;
+        html+="<div class='alert alert-info'>";
+        html+="<input type='radio' name='q"+no+"' value='"+v+"'>"+v+". ";  
+        html+=q.options[c]+"</div>";  
+      }
+      html+="</div>";
+      $("#quizListBox").append(html);
     }
-    html+="</div>";
-    $("#quizListBox").append(html);
+
+  function calculateScore() {
+    let score = 0;
+    for (var i in quizlist) {
+      var no = parseInt(i) + 1;
+      var userAnswer = $(`input[name='q${no}']:checked`).val();
+      if (userAnswer == quizlist[i].answer) {
+        score++;
+      }
+    }
+    console.log(score);
+    return score;
   }
-
-
-  
-  //$.getJSON("quiz.json",(data)=>quizlist=data);
-
+  console.log("score");
   console.log(quizlist);
 
 </script>
