@@ -1,0 +1,202 @@
+[
+  {
+    "title": "What does 'CPU' stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Processing Unit",
+      "Central Programming Unit",
+      "Control Program Unit"
+    ],
+    "answer": 1
+  },
+  {
+    "title": "Which programming language is known as the backbone of the web?",
+    "options": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Ruby"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Who is known as the father of computer science?",
+    "options": [
+      "Charles Babbage",
+      "Alan Turing",
+      "Tim Berners-Lee",
+      "John von Neumann"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "What is the smallest unit of data in a computer?",
+    "options": [
+      "Byte",
+      "Bit",
+      "Kilobyte",
+      "Nibble"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Which sorting algorithm has the best average case performance?",
+    "options": [
+      "Bubble Sort",
+      "Merge Sort",
+      "Quick Sort",
+      "Insertion Sort"
+    ],
+    "answer": 3
+  },
+  {
+    "title": "What is the main function of an operating system?",
+    "options": [
+      "To manage hardware resources",
+      "To run antivirus software",
+      "To compile programs",
+      "To handle email systems"
+    ],
+    "answer": 1
+  },
+  {
+    "title": "Which protocol is used for secure data transmission on the web?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "SMTP"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "What does 'RAM' stand for?",
+    "options": [
+      "Read Access Memory",
+      "Random Access Memory",
+      "Random Allocation Memory",
+      "Read Allocation Memory"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "What is the name of the first mechanical computer?",
+    "options": [
+      "The Analytical Engine",
+      "The ENIAC",
+      "The Difference Engine",
+      "The Z3"
+    ],
+    "answer": 3
+  },
+  {
+    "title": "What is the primary function of a firewall?",
+    "options": [
+      "To prevent unauthorized access to a network",
+      "To optimize internet speed",
+      "To encrypt data",
+      "To create backups"
+    ],
+    "answer": 1
+  },
+  {
+    "title": "Which data structure uses the 'Last In, First Out' (LIFO) principle?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Linked List",
+      "Array"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Which of these is NOT a relational database management system?",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Oracle"
+    ],
+    "answer": 3
+  },
+  {
+    "title": "Which HTML tag is used to create a hyperlink?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<hyperlink>"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "What is the primary purpose of DNS?",
+    "options": [
+      "To store IP addresses",
+      "To translate domain names to IP addresses",
+      "To manage web servers",
+      "To host websites"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Which of the following is a NoSQL database?",
+    "options": [
+      "PostgreSQL",
+      "SQLite",
+      "MongoDB",
+      "MariaDB"
+    ],
+    "answer": 3
+  },
+  {
+    "title": "Which programming paradigm is Python primarily known for?",
+    "options": [
+      "Functional Programming",
+      "Object-Oriented Programming",
+      "Procedural Programming",
+      "Aspect-Oriented Programming"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Which of these is NOT an operating system?",
+    "options": [
+      "Linux",
+      "Windows",
+      "Apache",
+      "macOS"
+    ],
+    "answer": 3
+  },
+  {
+    "title": "What is the time complexity of binary search in the average case?",
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n^2)",
+      "O(1)"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Which company developed the Java programming language?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Oracle",
+      "Sun Microsystems"
+    ],
+    "answer": 4
+  },
+  {
+    "title": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Advanced Protocol Integration",
+      "Application Protocol Interface",
+      "Advanced Programming Interface"
+    ],
+    "answer": 1
+  }
+]
