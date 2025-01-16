@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.2/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky id="image-360" radius="1000" src="2c5e2df41af9431c825a221dcaf49cc6.jpg"></a-sky>
+      
+      <a-text id="hoverText" value="Nopparuj inpikul" position="-5 0 -5" width="40" color="black"></a-text>
+      <a-text id="hoverText" value="653380132-5" position="-5 -2 -8" width="40" color="black"></a-text>
+      
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+      <a-entity gltf-model="toilet.glb" 
+      animation-mixer="clip:*" 
+      scale="10 10 10" 
+      position="0 -5 -15"></a-entity>
+
+      <a-entity gltf-model="CHAR.glb" 
+      animation-mixer="clip:*" 
+      scale="3 1.5 1.5" 
+      position="0 -2 -10"
+      rotation="0 0 0"
+      animation="property: rotation; to: 0 360 0; dur: 1000; easing: linear; loop: true"
+      >
+      </a-entity>
+    
+    </a-scene>
+    <script>
+      const hoverText = document.querySelector("#hoverText");
+      let time = 0;
+      const amplitude = 0.2;
+      const frequency = 0.03;
+      function animateHover() {
+        const y = 2 + amplitude * Math.sin(time);
+        for(node in hoverText){}
+        hoverText.setAttribute("position", `-6 ${y} -10`);
+        time += frequency;
+        requestAnimationFrame(animateHover);
+      }
+      animateHover();
+    </script>
+  </body>
+</html>
